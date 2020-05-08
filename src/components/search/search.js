@@ -1,11 +1,12 @@
 import React from 'react';
-import 'search.css';
+import './search.css';
 
 const sortByOptions = {
   'Best Match': 'best_match',
   'Higest Rated': 'rating',
   'Most Reviewed': 'review_count',
 };
+const HASH = "#";
 class SearchBar extends React.Component {
   renderSortByOptions() {
     Object.keys(sortByOptions).map((o, index) => {
@@ -23,7 +24,7 @@ class SearchBar extends React.Component {
           <input placeholder="Where?" />
         </div>
         <div className="SearchBar-submit">
-          <a>Let's Go</a>
+          <a href={HASH}>Let's Go</a>
         </div>
       </div>
     );

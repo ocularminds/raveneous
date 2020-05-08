@@ -1,5 +1,5 @@
 import React from 'react';
-import 'business.css';
+import './business.css';
 
 const business = {
   imageSrc:
